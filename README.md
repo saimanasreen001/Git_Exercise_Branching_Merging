@@ -1,43 +1,51 @@
-FastAPI Backend
 
-Overview
-This is a simple backend application built with FastAPI. It defines a basic API endpoint that returns a welcome message.
+## Backend – FastAPI
 
-Tech Stack
-Python 3.10+
-FastAPI
-Uvicorn
+This is a basic FastAPI backend with one root endpoint and a Pydantic model.
 
-Project Structure
+### Requirements
+
+* Python 3.7 or higher
+
+### Setup Instructions
+
+1. **Navigate to the Backend directory:**
+
+   ```bash
+   cd Backend
+   ```
+
+2. **(Optional) Create and activate a virtual environment:**
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. **Install dependencies:**
+
+   ```bash
+   pip install -r requirement.txt
+   ```
+
+4. **Run the server:**
+
+   ```bash
+   uvicorn main:app --reload
+   ```
+
+5. **Open in browser:**
+
+   * Root: [http://127.0.0.1:8000](http://127.0.0.1:8000)
+   * Docs: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+
+### Project Structure
+
+```
 Backend/
 ├── main.py
-├── requirements.txt
-└── venv/ (virtual environment - excluded from version control)
- Installation
+├── requirement.txt
+└── venv/  (optional, should be in .gitignore)
+```
 
-1. Clone the repository
-   git clone <your-repo-url>
-   cd Backend
-Create and activate a virtual environment:
-python -m venv venv
-# On Windows
-venv\Scripts\activate
-# On MacOS/Linux
-source venv/bin/activate
-Install dependencies:
-pip install -r requirements.txt
-Running the Application
-Start the development server using Uvicorn:
-uvicorn main:app --reload
-Visit the API in your browser at: http://127.0.0.1:8000
-Interactive API docs are available at:
-•	Swagger UI: http://127.0.0.1:8000/docs
-•	ReDoc: http://127.0.0.1:8000/redoc
-API Endpoint
-Method	Endpoint	Description
-GET	/	Returns welcome JSON
-Sample Response:
-{
-  "message": "Hi"
-}
 
