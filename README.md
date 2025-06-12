@@ -1,4 +1,4 @@
-## Practice ExerciseAdd commentMore actions
+## Practice Exercise
 Demonstrating Git workflow with frontend and backend development using branching and merging strategies.
 
 ## Team Members
