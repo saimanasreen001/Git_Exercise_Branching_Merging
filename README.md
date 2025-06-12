@@ -17,7 +17,7 @@ Click on Fork icon to create a copy of the original repository.
 `git clone https://github.com/saimanasreen001/Project-1.git`
 
 ## 3. Go to desired branch
-`git switch main-folder-branch
+`git switch main-folder-branch`
 
 ## 4. Make necessary changes(Example of adding README.md)
 `git add README.md`
