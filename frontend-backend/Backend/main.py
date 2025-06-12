@@ -1,16 +1,17 @@
 from fastapi import FastAPI
-from pydantic import BaseModel
 
+app = FastAPI()
 
-app=FastAPI()
-
-class Test(BaseModel):
-    id:int
-    name:str
-    origin:str
-
-
-
+# Root endpoint
 @app.get("/")
 def read_root():
-    return {"message":"Hi"}
+    return {"message": "Hello from FastAPI backend!"}
+
+# Another example endpoint
+@app.get("/info")
+def get_info():
+    return {
+        "team": "Saima-Chandrakant",
+        "backend": "FastAPI",
+        "status": "Working"
+    }
