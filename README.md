@@ -1,4 +1,4 @@
-## Git Exercise understanding the concept of Merging and Branching
+## Git Exercise understanding the concept of Branching and Merging
 
 ## Team Members:
 ```bash
